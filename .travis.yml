@@ -8,5 +8,5 @@ before_install:
   - sudo uname -m
   - echo $CFLAGS
 install: 
-  - ./autogen.sh && configure && make
+  - ./autogen.sh && ./configure && make
 script: make test
