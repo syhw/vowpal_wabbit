@@ -5,6 +5,8 @@ compiler:
 before_install:
   - sudo apt-get update -qq
   - sudo apt-get install -qq libboost-all-dev
+  - sudo uname -m
+  - echo $CFLAGS
 install: 
   - ./autogen.sh && configure && make
 script: make test
